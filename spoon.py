@@ -3,8 +3,8 @@ from datetime import datetime
 
 import time, requests, random
 sandi = input('Masukan password : ')
-if sandi == 'firman12':
-	print('Welcome client roki /n jangan lupa istirahat?')
+if sandi == 'robbyganteng':
+	print('Welcome client  /n jangan lupa istirahat')
 else:
     ws.close()
 xz = 1
@@ -20,14 +20,14 @@ judull = 'xwx'
 timehl2 = datetime.today()
 
 
-botauthtoken2 = 'f2403d5c8c8a51ad7dba69e1c75f72e75349d5aa' #token lu disini
+botauthtoken2 = 'b2bfaff03ca2789dcf2ca1387e7d7d5a321da038' #token lu disini
 
 rscode=0
 while rscode!=1:
 	#nomor = "06802143801"
-	nomor="081563926223"
+	nomor="082330109093"
 	###nomor = input("masukkan nomor telepon : ")
-	password="a123456789"
+	password="typolah86"
 	###password = input("masukkan password : ")
 	headers={"User-Agent":"Mozilla/5.0"}
 	response=requests.post('https://id-api.spooncast.net/signin/?version=2',headers=headers,json={"sns_type":"phone","sns_id":nomor,"password":password})
@@ -93,7 +93,7 @@ def on_message(ws, message):
         ljoin = '{"appversion":"4.3.16","event":"live_message","token":"","useragent":"Android","message":" ' + nick + random.choice(sapa) + ' '+ '"}'
         likee = [' Lama banget sih tap❤️nya😒  ','  Nah gitu dong Tap❤️ ','  Biasanya aja nggak Tap❤️😒 ','  Kenapa Harus Tap❤️,kalau Akhirnya nggak stay🤕  ','  Kok cuman Tap❤️,Gift nya enggak?😒 ',' Thanks For Tap❤️ Nya, Aku Sayang Kamu😘, (Tapi Boong) ']
         llike = '{"appversion":"4.3.16","event":"live_message","token":"","useragent":"Android","message":" ' + nick + random.choice(likee) + '❤️' + '"}'
-        tidur = '{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":" ' + nick + ' Yaudah Deh... Tante Diem😒"}'
+        tidur = '{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":" ' + nick + ' Yaudah Deh... Om Diem😒"}'
         kalem = '{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":"waalaikumsalam😇"}'
         bangun = '{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":" ' + nick + '  Iya Sayang... Tante Nyapa Kok❤️  "}'
         bangun2 = '{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":"Apasih  ' + nick + ' panggil panggil MJ 😏 kek yang mau ngasih duit ajah 😝 "}'
