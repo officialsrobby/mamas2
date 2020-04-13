@@ -67,7 +67,7 @@ def on_message(ws, message):
         uid = chat['data']['author']['id']
         nick = chat['data']['author']['nickname']
         evn = chat['event']
-        kesurupan = '{"appversion":"4.3.16","event":"live_message","token":"","useragent":"Android","message":"[ＴＡＮＴＥ ＶＥＲＡ] bisa bikin puas harga pas😉😚😍 "}'
+        kesurupan = '{"appversion":"4.3.16","event":"live_message","token":"","useragent":"Android","message":"bisa bikin puas harga pas😉😚😍 "}'
         if 1 == 1:
             if z == 0:
                 ws.send(kesurupan)
