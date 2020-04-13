@@ -20,7 +20,7 @@ judull = 'xwx'
 timehl2 = datetime.today()
 
 
-botauthtoken2 = 'b2bfaff03ca2789dcf2ca1387e7d7d5a321da038' #token lu disini
+botauthtoken2 = '510b152118e524377ef293c3576d26511c2bddbb' #token lu disini
 
 rscode=0
 while rscode!=1:
@@ -129,11 +129,11 @@ def on_message(ws, message):
         
         
         
-        if evn == 'live_message' and psn == 'Fvb control rank':
+        if evn == 'live_message' and psn == 'fvb control rank':
             headers3 = {'User-Agent': 'Mozilla/5.0'}
             response3 = requests.get('https://id-api.spooncast.net/lives/popular/', headers=headers3)
             ws.send(rank)
-        if evn == 'live_message' and psn[:-3] == 'Fvb rank':
+        if evn == 'live_message' and psn[:-3] == 'fvb rank':
             zz = psn[6:]
             xz = int(zz) - 1
             tanggal = datetime.today()
@@ -150,7 +150,7 @@ def on_message(ws, message):
             formatss = '%H:%M:%S'
             timeh = datetime.strptime(s2, formatss) - datetime.strptime(s1, formatss)
             ws.send('{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":"Info rank ' + str(xz + 1) + '  nama: ' + nama + ' judul: ' + judul + '  durasi -> ' + str(timeh) + ' "}')
-        if evn == 'live_message' and psn[:-2] == '$rank':
+        if evn == 'live_message' and psn[:-2] == 'fvb rank':
             zz = psn[6:]
             xz = int(zz) - 1
             tanggal = datetime.today()
@@ -167,7 +167,7 @@ def on_message(ws, message):
             formatss = '%H:%M:%S'
             timeh = datetime.strptime(s2, formatss) - datetime.strptime(s1, formatss)
             ws.send('{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":"Info rank ' + str(xz + 1) + '  nama: ' + nama + ' judul: ' + judul + '  durasi -> ' + str(timeh) + ' "}')
-        if evn == 'live_message' and psn == 'Fvb saya':
+        if evn == 'live_message' and psn == 'fvb saya':
             print('sjqjajsajajhshsajsjjsjwjwa')
             cid = tag
             headers4 = {'User-Agent': 'Mozilla/5.0'}
@@ -182,7 +182,7 @@ def on_message(ws, message):
             tangg = tan + ' ' + tang
             tangga = datetime.strptime(tangg, '%Y-%m-%d %H:%M:%S')
             ws.send('{"appversion":"4.3.16","event":"live_message","token":" ","useragent":"Android","message":"Info username ' + nn + ' tanggal akun dibuat -> ' + str(tangga) + ' GMT +0 "}')
-        if evn == 'live_message' and psn[:4] == 'Fvb cek':
+        if evn == 'live_message' and psn[:4] == 'fvb cek':
             print('sjqjajsajajhshsajsjjsjwjwa')
             cid = psn[5:]
             headers4 = {'User-Agent': 'Mozilla/5.0'}
@@ -201,10 +201,10 @@ def on_message(ws, message):
             
             
             
-        if evn == 'live_message' and psn == 'Fvb ON' and status == 'tidur':
+        if evn == 'live_message' and psn == 'fvb ON' and status == 'tidur':
             status = 'bangun'
             ws.send(bangun)
-        if evn == 'live_message' and psn == "Fvb OFF" and status == 'bangun':
+        if evn == 'live_message' and psn == "fvb OFF" and status == 'bangun':
         	print("aaaaaaaaajajqiajaiaja")
         	status = 'tidur'
         	ws.send(tidur)
