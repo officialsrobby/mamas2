@@ -24,24 +24,7 @@ botauthtoken2 = '510b152118e524377ef293c3576d26511c2bddbb' #token lu disini
 
 rscode=0
 while rscode!=1:
-	#nomor = "06802143801"
-	nomor="082330109093"
-	###nomor = input("masukkan nomor telepon : ")
-	password="typolah86"
-	###password = input("masukkan password : ")
-	headers={"User-Agent":"Mozilla/5.0"}
-	response=requests.post('https://id-api.spooncast.net/signin/?version=2',headers=headers,json={"sns_type":"phone","sns_id":nomor,"password":password})
-	#print(response.json())
-	rscode = response.json()['results'][0]['result_code']
-	if rscode !=1:
-		print("nomor atau password salah , ulangi lagi")
-print("berhasil login")
-tirublock=response.json()['results'][0]['tag']
-#time.sleep(100)
-tokenl=response.json()['results'][0]['token']
-print(response.json()['results'][0]['nickname'])
-botauthtoken2=tokenl
-
+	
 txtid = input('Link Live nya  : ')
 response = requests.get(txtid)
 urlo = response.url
