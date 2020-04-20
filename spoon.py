@@ -21,9 +21,6 @@ timehl2 = datetime.today()
 
 
 botauthtoken2 = '510b152118e524377ef293c3576d26511c2bddbb' #token lu disini
-
-rscode=0
-while rscode!=1:
 	
 txtid = input('Link Live nya  : ')
 response = requests.get(txtid)
